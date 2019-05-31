@@ -41,6 +41,6 @@
     </plugins>
   </build>
   <properties>
-    <californium.version>2.0.0-M14</californium.version>
+    <californium.version>2.0.0-M15</californium.version>
   </properties>
 </project>
