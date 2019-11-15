@@ -7,7 +7,7 @@
 	<name>Mule CoAP Connector Testutils</name>
 	<description>Testutils for Mule CoAP Connector</description>
 	<properties>
-		<californium.version>2.0.0-M15</californium.version>
+		<californium.version>2.0.0-RC1</californium.version>
 	</properties>
 
 	<build>
