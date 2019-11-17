@@ -42,6 +42,9 @@
 	<properties>
 		<category>Community</category>
 		<licensePath>LICENSE.md</licensePath>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 		<californium.version>2.0.0-RC1</californium.version>
 	</properties>
     <scm>
