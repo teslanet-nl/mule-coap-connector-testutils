@@ -5,3 +5,5 @@ syntax: regexp
 ^\.settings$
 syntax: regexp
 ^\.classpath$
+syntax: regexp
+^dependency-reduced-pom\.xml$
