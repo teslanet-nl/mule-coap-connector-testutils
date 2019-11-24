@@ -20,7 +20,7 @@
 	
 	<groupId>nl.teslanet.mule.connectors.coap</groupId>
 	<artifactId>mule-coap-connector-testutils</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0-M1-SNAPSHOT</version>
 	
     <name>${project.groupId}:${project.artifactId}</name>
 	<description>Testutils for Mule CoAP Connector</description>
