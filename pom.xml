@@ -48,8 +48,8 @@
 		<californium.version>2.0.0</californium.version>
 	</properties>
     <scm>
-        <connection>scm:git:https://github.com/teslanet-nl/mule-coap-connector-testutils.git</connection>
-        <developerConnection>scm:git:https://github.com/teslanet-nl/mule-coap-connector-testutils.git</developerConnection>
+        <connection>scm:hg:git+https://github.com/teslanet-nl/mule-coap-connector-testutils.git</connection>
+        <developerConnection>scm:hg:git+https://github.com/teslanet-nl/mule-coap-connector-testutils.git</developerConnection>
         <url>http://github.com/teslanet-nl/mule-coap-connector-testutils/tree/master</url>
         <tag>HEAD</tag>
     </scm>           
