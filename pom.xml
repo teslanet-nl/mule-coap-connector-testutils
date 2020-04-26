@@ -1,17 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  Mule CoAP Connector Test Utilities
+  %%
+  Copyright (C) 2019 - 2020 (teslanet.nl) Rogier Cobben
+  
+  Contributors:
+      (teslanet.nl) Rogier Cobben - initial creation
+  %%
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+  
+  This Source Code may also be made available under the following Secondary
+  Licenses when the conditions for such availability set forth in the Eclipse
+  Public License, v. 2.0 are satisfied: GNU General Public License, version 2
+  with the GNU Classpath Exception which is
+  available at https://www.gnu.org/software/classpath/license.html.
+  
+  SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+  #L%
+  -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<!-- 
-	/******************************************************************************* 
-	* Copyright (c) 2019 (teslanet.nl) Rogier Cobben. 
-	* 
-	* All rights reserved. This program and the accompanying materials 
-	* are made available under the terms of the Eclipse Public License - v 2.0 
-	* which accompanies this distribution. 
-	*
-    * The Eclipse Public License is available at * http://www.eclipse.org/legal/epl-v20.html 
-	*
-	* Contributors: * (teslanet.nl) Rogier Cobben - initial creation 
-	******************************************************************************/
-	-->
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -20,14 +30,16 @@
 	<version>1.0.0-M2-SNAPSHOT</version>
 
 	<name>${project.groupId}:${project.artifactId}</name>
-	<description>Testutils for Mule CoAP Connector</description>
+	<description>Test utilities for Mule CoAP Connector</description>
 	<url>http://www.teslanet.nl</url>
+	
 	<licenses>
 		<license>
 			<name>Eclipse Public License - v 2.0</name>
 			<url>https://www.eclipse.org/legal/epl-2.0/</url>
 		</license>
 	</licenses>
+	
 	<developers>
 		<developer>
 			<name>Rogier Cobben</name>
@@ -36,20 +48,23 @@
 			<organizationUrl>http://www.teslanet.nl</organizationUrl>
 		</developer>
 	</developers>
+
 	<properties>
 		<category>Community</category>
 		<licensePath>LICENSE.md</licensePath>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<californium.version>2.0.0</californium.version>
+		<californium.version>2.2.2</californium.version>
 	</properties>
+
 	<scm>
 		<connection>scm:git:https://github.com/teslanet-nl/mule-coap-connector-testutils.git</connection>
 		<developerConnection>scm:git:https://github.com/teslanet-nl/mule-coap-connector-testutils.git</developerConnection>
 		<url>http://github.com/teslanet-nl/mule-coap-connector-testutils/tree/master</url>
 		<tag>HEAD</tag>
 	</scm>
+
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
@@ -63,6 +78,43 @@
 
 	<build>
 		<plugins>
+					<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>2.0.0</version>
+				<configuration>
+					<projectName>Mule CoAP Connector</projectName>
+					<licenseName>epl_v2</licenseName>
+					<inceptionYear>2019</inceptionYear>
+					<copyrightOwners><![CDATA[(teslanet.nl) Rogier Cobben
+
+Contributors:
+    (teslanet.nl) Rogier Cobben - initial creation]]>
+					</copyrightOwners>
+					<verbose>false</verbose>
+					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+				</configuration>
+				<executions>
+					<execution>
+						<id>verify headers</id>
+						<phase>compile</phase>
+						<configuration>
+							<failOnMissingHeader>true</failOnMissingHeader>
+							<failOnNotUptodateHeader>true</failOnNotUptodateHeader>
+						</configuration>
+						<goals>
+							<goal>check-file-header</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.freemarker</groupId>
+						<artifactId>freemarker</artifactId>
+						<version>2.3.29</version>
+					</dependency>
+				</dependencies>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
