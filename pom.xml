@@ -21,7 +21,9 @@
   SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
   #L%
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -32,14 +34,18 @@
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Test utilities for Mule CoAP Connector</description>
 	<url>http://www.teslanet.nl</url>
-	
+	<organization>
+		<name>Teslanet.nl</name>
+	</organization>
+	<inceptionYear>2019</inceptionYear>
+
 	<licenses>
 		<license>
 			<name>Eclipse Public License - v 2.0</name>
 			<url>https://www.eclipse.org/legal/epl-2.0/</url>
 		</license>
 	</licenses>
-	
+
 	<developers>
 		<developer>
 			<name>Rogier Cobben</name>
@@ -78,7 +84,7 @@
 
 	<build>
 		<plugins>
-					<plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>license-maven-plugin</artifactId>
 				<version>2.0.0</version>
