@@ -59,7 +59,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<californium.version>2.2.3</californium.version>
+		<californium.version>2.4.0</californium.version>
 	</properties>
 
 	<scm>
@@ -121,20 +121,6 @@ Contributors:
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>3.1.0</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>3.0.1</version>
 				<executions>
@@ -157,6 +143,7 @@ Contributors:
 							<goal>shade</goal>
 						</goals>
 						<configuration>
+						    <createSourcesJar>true</createSourcesJar>
 							<relocations>
 								<relocation>
 									<pattern>org.eclipse.californium</pattern>
