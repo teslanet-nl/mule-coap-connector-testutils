@@ -27,7 +27,7 @@
 
 	<groupId>nl.teslanet.mule.connectors.coap</groupId>
 	<artifactId>mule-coap-connector-testutils</artifactId>
-	<version>1.0.0-M4-SNAPSHOT</version>
+	<version>1.0.0-M5-SNAPSHOT</version>
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Test utilities for Mule CoAP Connector</description>
